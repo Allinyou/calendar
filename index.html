@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>A-Circle日签</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="js/touch.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</head>
+	<body>
+		<input style=" position: absolute; left: 0; top: 0; opacity: 0;" type="file" class="uploadfile" accept="image/*">
+		<input type="button" style="z-index: 111; width: 100px; height: 20px; position: absolute; left: 0; top: 0; opacity: 0;" id="btnRotate" />
+		<div class="index">
+			<div id="canvasBox" class="canvasBox">
+				<div class="time">
+					<div class="time-i">
+						<img class="border" data-src="img/border.png"/>
+						<p class="day"></p>
+						<p class="yearAndM"></p>
+					</div>
+					<p class="week clearfix"><span class="English"></span><span class="Chinese"></span></p>
+				</div>
+				<img class="camera" id="camera" src="img/camera.png"/>
+				<img id="rotate" data-src="img/rotate.png"/>
+				<div class="pic">
+					<img class="picBg" data-src="img/pic-bg.jpg" id="picBg"/>
+					<img data-src="img/text1.png" class="text1"/>	
+				</div>
+				<div class="con">
+					<img class="con-bg" data-src="img/img1.jpg" id="con-bg"/>
+					<input style="opacity: 0;" class="input1" type="text" maxlength="14" value="最好的一切" />
+					<input style="opacity: 0;" class="input2" type="text" maxlength="14" value="就是我们一起经历和创造的一切" />
+					<input style="opacity: 0;" class="input4" type="text" maxlength="14" value="就是我们一起经历和创造的一切" />
+					<input class="input3" type="text" maxlength="14" placeholder="—A-Circle生活平台" value="—A-Circle生活平台" />
+					<textarea id="textarea" maxlength="42" placeholder="最好的一切&#10;就是我们一起经历和创造的一切"></textarea>
+				</div>
+			</div>
+			<div class="footer">
+				<ul class="clearfix">
+					<li class="save">确定</li>
+					<li class="again">再做一张</li>
+				</ul>
+			</div>
+		</div>
+		<div class="over" style="display: none;">
+			<img class="showImg" src/>
+			<p>-长按图片保存到相册-</p>
+			<div class="footer">
+				<ul class="clearfix">
+					<li class="again">再做一张</li>
+					<li class="shareBtn">分享</li>
+				</ul>
+			</div>
+		</div>
+		<div class="loading" style="display: none;">
+			<i><img src="img/loading.png"/></i>
+			<p></p>
+		</div>
+		<div class="share" style="display: none;"><img src="img/share.png"/></div>
+		<canvas id="mycanvas" width="275" height="440" style=" display: none; width:825px;height:1320px;">您的浏览器不支持canvas</canvas>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script src="/snowruns/share_calendar"> </script>
+	</body>
+</html>

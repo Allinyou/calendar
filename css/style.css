@@ -1,0 +1,180 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,figure {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 100px;
+	width: 100%;
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+	/*font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;*/
+	font-family:Arial, "Microsoft YaHei", SimHei, "Hiragino Sans GB",STXihei;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: .26rem;
+	visibility:hidden;
+	border-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+em, i, b, strong {
+	font-style: normal;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;	
+}
+a:link{
+	color: #fff;
+}
+a:visited {
+	color: #fff;
+}
+a:hover{
+	color: #fff;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+body{
+	overflow: hidden;
+	background-color: #000;
+	padding-top: constant(safe-area-inset-top);   /*为导航栏+状态栏的高度 88px  */          
+    padding-left: constant(safe-area-inset-left);   /*如果未竖屏时为0  */              
+    padding-right: constant(safe-area-inset-right); /*如果未竖屏时为0 */               
+    padding-bottom: constant(safe-area-inset-bottom);/*为底下圆弧的高度 34px */ 
+}
+
+.index{ position: relative; overflow: hidden; width: 100%; height: 100%; background: url(../img/bg.jpg) no-repeat; background-size: 100% 100%;}
+
+#camera{ position: absolute; z-index: 2; left: 50%; top: 30%; margin: -.45rem 0 0 -.45rem; width: .9rem; height: .9rem;}
+#rotate{ position: absolute; z-index: 1; top: 48%; right: 3%; width: .5rem; height: .5rem;}
+
+.canvasBox{ position: relative; margin: 0 auto; margin-top: 1rem; width: 5.5rem; height: 8.8rem; background-color: #fff;}
+.canvasBox .pic{ position: relative; width: 100%; height: 4.9rem; overflow: hidden;}
+.canvasBox .pic .picBg{ position: absolute; left: 0; top: 0; width: 5.55rem;}
+.canvasBox .pic .text1{ position: absolute; left: .45rem; top: 2.44rem; width: 1.16rem; height: .74rem;}
+/*.canvasBox .pic .camera{ position: absolute; left: 50%; top: 50%; margin: -.45rem 0 0 -.45rem; width: .9rem; height: .9rem;}*/
+.canvasBox .time{ position: absolute; z-index: 2; left: .5rem; top: 4.35rem; width: .74rem; height: 1.2rem; box-sizing: border-box;}
+.canvasBox .time-i{ position: relative; width: .74rem; height: 1.05rem; overflow: hidden;}
+.canvasBox .time-i .day{ position: relative; margin: .1rem 0 0 0; font-size: .6rem; color: #000; text-align: center; font-weight: bold;}
+.canvasBox .time-i .yearAndM{ position: relative; top: -.05rem; font-size: .16rem; color: #000; text-align: center;}
+.canvasBox .time-i img{ position: absolute; top: 0; left: 0; width: .74rem; height: 1.05rem;}
+.canvasBox .week{ position: relative; font-size: .12rem; color: #000; line-height: .3rem;}
+.canvasBox .week span{ display: inline-block;}
+.canvasBox .week span:nth-child(1){ float: left;}
+.canvasBox .week span:nth-child(2){ float: right;}
+.canvasBox .con{ position: relative; width: 100%; height: 3.9rem;}
+.canvasBox .con .con-bg{ position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+
+.canvasBox .con input{ border: 1px dashed #bb0a30; color: #000; text-indent: .5em; }
+.canvasBox .con .input1{ position: absolute; top: .9rem; font-size: .26rem; right: .32rem; width: 3.88rem; height: .4rem; color: .26rem; }
+.canvasBox .con .input2{ position: absolute; top: 1.3rem; font-size: .26rem; right: .32rem; width: 3.88rem; height: .4rem; color: .26rem; }
+.canvasBox .con .input4{ position: absolute; top: 1.7rem; font-size: .26rem; right: .32rem; width: 3.88rem; height: .4rem; color: .26rem; }
+.canvasBox .con .input3{ position: absolute; text-align: right; top: 2.3rem; font-size: .16rem; right: .32rem; width: 3.88rem; height: .25rem; color: .26rem; }
+#textarea{position: absolute; top: .8rem; line-height: .4rem; right: .32rem; resize:none; z-index: 1; padding: .1rem .1rem .1rem .1rem; width: 3.68rem; height: 1.2rem; border: 1px dashed #bb0a30; font-size: .26rem; color: #000;}
+
+#textarea::-webkit-input-placeholder{
+    color:#000; font-size: .26rem; 
+}
+#textarea:-moz-placeholder{
+    color:#000; font-size: .26rem; 
+}
+#textarea::-moz-placeholder{
+    color:#000; font-size: .26rem; 
+}
+#textarea:-ms-input-placeholder{
+    color:#000; font-size: .26rem; 
+}
+
+.input3::-webkit-input-placeholder{
+    color:#000; font-size: .16rem; 
+}
+.input3:-moz-placeholder{
+    color:#000; font-size: .16rem; 
+}
+.input3::-moz-placeholder{
+    color:#000; font-size: .16rem; 
+}
+.input3:-ms-input-placeholder{
+    color:#000; font-size: .16rem; 
+}
+
+.index .footer{ position: absolute; left: 0; bottom: 0; width: 100%; height: 1rem; background: #000;}
+.index .footer ul{ position: relative; margin-top: .2rem; width: 100%; height: .6rem;}
+.index .footer ul li{ float: left; width: 49%; height: .6rem; font-size: .34rem; color: #fff; text-align: center; line-height: .6rem;}
+.index .footer ul li:nth-child(1){ border-right: 1px solid #fff;}
+
+/*loading页面*/
+.loading{ position: absolute; z-index: 4; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.8);}
+.loading i { position: absolute; left: 50%; top: 3.3rem; margin: 0 0 0 -.4rem; width: .8rem; height: .7rem; }
+.loading i img{ width: 100%; height: 100%;
+	transform-origin:55% 50%;
+	-webkit-transform-origin:55% 50%;  
+	animation:loading 1s linear infinite forwards; 
+	-webkit-animation:loading 1s linear infinite forwards;
+}
+.loading p{ position: relative; margin-top: 4.2rem; letter-spacing: 1px; font-size: .24rem; color: #fff; text-align: center; }
+
+/*海报生成页面*/
+.over{ position: fixed; z-index: 222; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.6);}
+.over .showImg{ position: absolute; left: 50%; margin: 1rem 0 0 -2.75rem; width: 5.5rem; height: 8.8rem;}
+.over p{ position: relative; margin-top: 10.3rem; font-size: .24rem; color: #fff; text-align: center;}
+.over .footer{ position: absolute; left: 0; bottom: 0; width: 100%; height: 1rem; background: #000;}
+.over .footer ul{ position: relative; margin-top: .2rem; width: 100%; height: .6rem;}
+.over .footer ul li{ float: left; width: 49%; height: .6rem; font-size: .34rem; color: #fff; text-align: center; line-height: .6rem;}
+.over .footer ul li:nth-child(1){ border-right: 1px solid #fff;}
+
+/*分享页*/
+.share{ position: fixed; z-index: 2222; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.6);}
+.share img{ position: absolute; top: .12rem; right: .6rem; width: 1.87rem; height: 2.24rem;}
+
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){ 
+    
+    body{
+      padding-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: env(safe-area-inset-bottom);
+   }
+   
+   .over .footer{ border-bottom: 44px solid #000; }
+}
+
+@media screen and (max-width: 321px) {
+    .canvasBox .time-i .day{ margin: 0 !important;}
+    .canvasBox .time-i .yearAndM{ top: -.1rem;}
+}
+
+
+@keyframes loading {
+	0% {transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+@-webkit-keyframes loading {
+  	0% {-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
+
+
+
+
+
